@@ -1,0 +1,27 @@
+{
+	"name": "users",
+	"version": "1.0.0",
+	"dependencies": {},
+	"idSize": 0,
+	"idAlphavet": [
+		0
+	],
+	"users": [
+		{
+			"id": "0",
+			"login": "tunaxx",
+			"password": "nik123321",
+			"IP": "",
+			"group": "IT-2105",
+			"time": [
+				"Mon|9:30:50+",
+				"Tue|10:30:50+"
+			]
+		},
+		{
+			"id": 1,
+			"IP": "",
+			"time": []
+		}
+	]
+}1

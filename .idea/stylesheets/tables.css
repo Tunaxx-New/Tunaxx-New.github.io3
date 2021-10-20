@@ -1,0 +1,27 @@
+.timeline {
+    border-collapse: collapse;
+}
+.timeline td {
+    background-color: black;
+    color: white;
+}
+.timeline .header td {
+    background-color: red;
+    color: white;
+
+    width: 10%;
+
+    text-align: center;
+}
+.timeline .even {
+    background-color: darkgray;
+    color: white;
+
+    width: 10%;
+}
+.timeline .odd {
+    background-color: gray;
+    color: white;
+
+    width: 10%;
+}
