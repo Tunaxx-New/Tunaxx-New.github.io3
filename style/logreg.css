@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding:0;
+  height: 100%;
+  background-color: #A9A9A9;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  margin: 16px;
+  background-color: black;
+  border-width: 1px;
+  box-shadow: 0 0 5px rgba(0, 7, 9, 0.3);
+}
+
+.centered {
+  position:absolute;
+  left:50%;
+  top: 50%;
+  border-radius: 20px;
+  -moz-transform:    translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform:         translateX(-50%) translateY(-50%);
+  margin-top: 16px;
+}
+.hcentered {
+  position:absolute;
+  left:50%;
+
+  width: 80%!important;
+
+  margin-top: 5%!important;
+
+  border-radius: 20px;
+  -moz-transform:    translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform:         translateX(-50%);
+}
+.hcentered-login {
+  position:absolute;
+  left:50%;
+
+  width: 80%!important;
+  max-width: 640px!important;
+
+  margin-top: 12%;
+  border-radius: 20px;
+  -moz-transform:    translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform:         translateX(-50%);
+}
+
+.margindiv {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.marginSingInUp {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+
+
+#LOGINwindow {
+  background-color: white;
+  width: 50%;
+}

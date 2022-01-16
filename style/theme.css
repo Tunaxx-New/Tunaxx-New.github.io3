@@ -1,0 +1,49 @@
+:root {
+    --primary: #00ff00!important;
+    --light: #006400!important;
+    --text-light: black;
+    --text-dark: black;
+    --shadow: #a7fc00;
+}
+
+.btn-primary, .btn-primary:focus {
+    background-color: var(--light);
+    border-color: var(--light);
+    color: var(--text-light);
+}
+.btn-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--text-dark);
+}
+a {
+    color: var(--primary);
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: 0 5px 1px var(--shadow)!important;
+ }
+
+ .dropdown-item:active {
+     background-color: var(--shadow)!important;
+     color:var(--text-dark)!important;
+ }
+
+ .btn-outline-primary {
+     color: var(--primary)!important;
+     border-color: var(--primary)!important;
+     box-shadow: 0 0 1px var(--primary)!important;
+ }
+ .btn-outline-primary:hover {
+    color: var(--primary)!important;
+    background-color: var(--primary)!important;
+    color:var(--text-dark)!important;
+    border-color: var(--primary)!important;
+}
+.btn-outline-primary:focus {
+    color: var(--primary)!important;
+    background-color: var(--primary)!important;
+    color:var(--text-dark)!important;
+    border-color: var(--primary)!important;
+}
