@@ -49,6 +49,7 @@ body {
 
 #help {
     animation: fadeIn 3s;
+	opacity: 0;
 }
 #help h1 {
     padding-top: 128px;
