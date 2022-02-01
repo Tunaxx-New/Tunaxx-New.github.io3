@@ -1,0 +1,154 @@
+@import "variables.css";
+
+#back {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    cursor: none!important;
+}
+
+.scene {
+    perspective-origin: center;
+    perspective: 2000px;
+    width:100%;
+    height:100%;
+    position: absolute;
+
+    background-color: transparent;
+    background-image: none!important;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    z-index: -1000;
+    opacity: 0;
+}
+
+.field {
+    width: 50%;
+    height: 30%;
+    top: 10%;
+    background-color: black;
+    box-shadow: 0 5px 10px #000000;
+    z-index: 10000;
+    opacity: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.field p {
+    color: white;
+    margin: 8px;
+}
+
+.centered {
+    position:absolute;
+    left:50%;
+    top: 50%;
+    -moz-transform:    translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform:         translateX(-50%) translateY(-50%);
+}
+.hcentered {
+    position:absolute;
+    left:50%;
+    -moz-transform:    translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform:         translateX(-50%);
+}
+
+.fa-lightbulb {
+    position: fixed;
+    z-index: 10000;
+    color: white;
+
+    -moz-transform:    rotateZ(-30deg);
+    -webkit-transform: rotateZ(-30deg);
+    transform:         rotateZ(-30deg);
+}
+
+.plane {
+    --height: 0;
+    --width: 0;
+    --x: 0;
+    --y: 0;
+    --z: 0;
+    --rx: 0;
+    --ry: 0;
+    --rz: 0;
+    --color: #555555;
+    --true-color: #555555;
+
+    display:block;
+    position:absolute;
+    transform-style:preserve-3d;
+
+    width: var(--width);
+    height: var(--height);
+    top: var(--y);
+    left: var(--x);
+
+    -webkit-transform: translateZ(var(--z)) rotateY(var(--ry)) rotateZ(var(--rz)) rotateX(var(--rx));
+    -moz-transform:    translateZ(var(--z)) rotateY(var(--ry)) rotateZ(var(--rz)) rotateX(var(--rx));
+    transform:         translateZ(var(--z)) rotateY(var(--ry)) rotateZ(var(--rz)) rotateX(var(--rx));
+
+    background-color: var(--color);
+
+    animation-duration: 0.5s;
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 0%;
+    }
+  
+    to {
+      opacity: 100%;
+    }
+}
+@keyframes ShowOut {
+    from {
+      visibility: hidden;
+    }
+  
+    to {
+      visibility: visible;
+    }
+}
+@keyframes fadeIn {
+    from {
+      opacity: 100%;
+    }
+  
+    to {
+      opacity: 0%;
+    }
+}
+
+.cube {
+    --length: 0;
+    --color: transparent!important;
+}
+
+.triger {
+    background-color: transparent;
+    width:100px;
+    height:100px;
+    position: absolute;
+    z-index: 10000;
+    overflow: hidden;
+
+    -webkit-transform: rotateZ(-5deg);
+    -moz-transform:    rotateZ(-5deg);
+    transform:         rotateZ(-5deg);
+
+    animation: ShowOut 5s;
+}
